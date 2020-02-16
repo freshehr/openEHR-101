@@ -1,6 +1,8 @@
-title: "openEHR Reference Model" permalink: ES2-reference-model.html
-summary: This section provides a basic overview of the openEHR reference
-model ---
+---
+title: openEHR Reference Model
+permalink: ES2-reference-model.html
+summary: This section provides a basic overview of the openEHR reference model
+---
 
 The openEHR Reference model defines a relatively small set of
 information model constructs which openEHR back-ends must support. This

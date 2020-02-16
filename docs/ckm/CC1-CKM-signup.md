@@ -1,5 +1,7 @@
-title: "CKM signup" permalink: CC1-CKM-signup.html summary: This section
-provides guidance on how to sign up to Clinical Knowledge Manager. ---
+title: CKM signup 
+permalink: CC1-CKM-signup.html 
+summary: This section provides guidance on how to sign up to Clinical Knowledge Manager. 
+---
 
 Access Clinical Knowledge Manager via the appropriate link. The
 International Clinical Knowledge Manager can be accessed via

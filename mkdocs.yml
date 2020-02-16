@@ -1,4 +1,27 @@
 site_name: openEHR client-side development
+nav:
+    - Overview: 'README.md'
+    - Introduction to openEHR and Ehrscape:
+        - 'intro/ES0-overview-openehr-ehrscape.md'
+        - 'intro/ES1-archetypes-template.md'
+        - 'intro/ES2-reference-model.md'
+    - Using Postman:
+        - 'postman/PM1-postman-ehrscape-getting-ready.md'
+        - 'postman/PM2-navigate-postman.md'
+        - 'postman/PM3-using-postman.md'    
+    - EHR Explorer:
+        - 'ehr-explorer/EHREX1-intro.md'
+        - 'ehr-explorer/EHREX2-navigation.md'
+        - 'ehr-explorer/EHREX3-models.md'    
+    - Self service Portal:
+        - 'portal/SSP1-account-management.md'
+        - 'portal/SSP2-resource-management.md'
+        - 'portal/SSP7-admin.md'
+    - Clinical content:
+        - 'ckm/CC0-CKM-overview.md'
+        - 'ckm/CC1-CKM-signup.md'
+        - 'ckm/CC2-CKM-template-review.md'
+        
 theme:
     name: 'material'
     palette:

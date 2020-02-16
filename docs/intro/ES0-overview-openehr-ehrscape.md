@@ -1,11 +1,8 @@
 ---
 title: Overview of openEHR and Ehrscape 
 permalink: ES0-overview-openehr-ehrscape.html 
-summary: This section provides an overview of the basic concepts of openEHR and introduces the C4H
-Ehrscape service
+summary: This section provides an overview of the basic concepts of openEHR and introduces the C4H Ehrscape service
 ---
-
-# Introduction
 
 openEHR is a open specification for the information model of an electronic health record, published  and maintained by [openEHR International](https://openehr.org).
 
@@ -181,7 +178,7 @@ An Element is the leaf-node construct which is basically a name/value
 pair with a defined datatype. The nature of the datatype determines the
 exact structure of the Element.
 
-# Ehrscape domains and EhrExplorer
+## Ehrscape domains and EhrExplorer
 
 The [Ehrscape](https://test.operon.systems) openEHR service
 provided by [Better](http:/marand.si) is configured to allow app

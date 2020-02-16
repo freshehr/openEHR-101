@@ -1,5 +1,8 @@
-title: "CKM overview" permalink: CC0-CKM-overview.html summary: This
-section provides an overview of Clinical Knowledge Manager. ---
+---
+title: CKM overview 
+permalink: CC0-CKM-overview.html 
+summary: Thiss ection provides an overview of Clinical Knowledge Manager. 
+---
 
 Clinical Knowledge Manager (CKM) is a commercial online tool for
 managing openEHR artefacts such as archetypes and templates. All CKM

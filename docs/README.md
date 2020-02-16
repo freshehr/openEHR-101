@@ -1,3 +1,4 @@
+---
 title: What can I do with the platform? 
 ---
 
@@ -21,20 +22,19 @@ based on these standards.
 To find out more about the rationale and concepts behind the open
 platform approach, you may want to look this video.
 
-# Create an Account
 
+## Create an Account
 Your first step to using the platform is to create an account - just [click
 here]().
 
-# Build a Project
+## Build a Project
 
 The building blocks of the platform are called a Project. A Project
 provides a container for a set of services from the platform that you
 need for a particular application to use the platform you need at least
 one Project, although you can create as many as you need.
 
-# Explore the API
-
+## Explore the API
 All interaction with the platform is through a set of REST APIs that are
 provisioned for you when you create a Project. The easiest way to
 understand how these APIs work and the services they provide is to read
@@ -42,8 +42,7 @@ the documentation and explore the APIs using Postman which provides a
 test harness allowing you to experiment with the APIs available in your
 Operinos.
 
-# Connect your First Application
-
+## Connect your First Application
 Once you understand the basics you will be ready to connect your first
 application to the platform. You can build applications to run on the
 platform using virtually any web development language of your choice.

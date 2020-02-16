@@ -1,8 +1,12 @@
-title: "CKM template review" permalink: CC2-CKM-template-review.html
-summary: This section provides guidance on how to do a review of a
-template in Clinical Knowledge Manager. ---
+---
+title: CKM template review 
+permalink: CC2-CKM-template-review.html
+summary: This section provides guidance on how to do a review of a template in Clinical Knowledge Manager. 
+---
 
-# General Information
+# Reviewing a template in CKM
+
+## Introduction
 
 One of the key points to be aware of at this stage is that you will be
 reviewing a dataset rather than finished data entry form or report. The
@@ -65,7 +69,7 @@ before you submit your review, and that is at the very end of the
 process when we ask you for your overall recommendation. I’ll say a bit
 more about this at the end of this document.
 
-# Invitation
+## Invitation
 
 You will have received an email invitation to review a template. In the
 body of the email there will be four choices:
@@ -92,9 +96,9 @@ If you don’t want to review this template at all, you can select
 invitation in the future to participate in a review for another template
 or archetype.
 
-# Review template now
+## Review template now
 
-## Overview
+### Overview
 
 When you have chosen to perform the review now from your invitation
 email, you will be presented with the Clinical Knowledge Manager login
@@ -125,7 +129,7 @@ You now have several choices:
     one should only be used when you have completed the review. It is
     advisable to ***save and continue*** at regular intervals.
 
-## Simple view
+### Simple view
 
 Before you start the review process it may be useful to switch to the
 simple view of the template (see (1) in the screenshot above), just to
@@ -142,14 +146,14 @@ to understand and visualise the content of the template.
 ![Print and mindmap
 views](/images/Template_review_print_plus_mindmap.jpg)
 
-## Starting the review
+### Starting the review
 
 To start the review, just toggle back to the review screen and click on
 Next at the bottom of the screen or select the Header tab.
 
 ![Toggle tabs](/images/Template_review_toggle_simple_review.jpg)
 
-## The Header tab
+### The Header tab
 
 The Header tab displays the template name and the purpose of the
 template. You can add comments on both by simply typing into the box
@@ -168,7 +172,7 @@ details in other template reviews:
 
 ![Header comments](/images/Template_review_header_typical_comments2.jpg)
 
-## The Data tab
+### The Data tab
 
 The Data tab displays the main body of the template. This part is quite
 long, so here are some useful hints:
@@ -228,7 +232,7 @@ Overall comments tab to move to the final step of the review. You can
 also interrupt your review and come back to it at any time by using the
 ***Save and close*** option at the bottom of the view.
 
-## The Overall Comments tab
+### The Overall Comments tab
 
 The final part of the review allows you to make some more general
 comments about the template and complete the overall recommendation.
@@ -241,15 +245,13 @@ to add anything.
 Below are some examples of overall comments made in other template
 reviews:
 
-![Missing
-elements](/images/Template_review_missing_elements_comments1.jpg)
+![Missing elements](/images/Template_review_missing_elements_comments1.jpg)
 
-![Missing
-elements](/images/Template_review_missing_elements_comments2.jpg)
+![Missing elements](/images/Template_review_missing_elements_comments2.jpg)
 
 ![Who else](/images/Template_review_who_else_comment.jpg)
 
-The ***Overall Recommendation*** is mandatory, and this is the only part
+The **Overall Recommendation** is mandatory, and this is the only part
 you must complete if you want to submit your review. You must select one
 of these options:
 
@@ -267,10 +269,9 @@ The screenshot below explains how these options are intended to be used.
 You can also display this information by clicking on the information
 icon next to the Overall Recommendation field.
 
-![Recommendation
-information](/images/Template_review_recommendation_info.jpg)
+![Recommendation information](/images/Template_review_recommendation_info.jpg)
 
-# The Dashboard
+## The Dashboard
 
 If you want to go back to your review later or you have selected to
 accept a review but complete it later, you can log into the Clinical
@@ -280,3 +281,4 @@ outstanding reviews. Click on the line displaying your review and select
 Start your review now.
 
 ![Dashboard](/images/Template_review_dashboard_start_review.jpg)
+ 
