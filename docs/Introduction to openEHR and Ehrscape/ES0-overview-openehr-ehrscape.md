@@ -1,13 +1,13 @@
-title: "Overview of openEHR and Ehrscape" permalink:
-ES0-overview-openehr-ehrscape.html summary: This section provides an
-overview of the basic concepts of openEHR and introduces the Operon
-Ehrscape service ---
+---
+title: Overview of openEHR and Ehrscape 
+permalink: ES0-overview-openehr-ehrscape.html 
+summary: This section provides an overview of the basic concepts of openEHR and introduces the C4H
+Ehrscape service
+---
 
 # Introduction
 
-openEHR is a open specification for the information model of an
-electronic health record, published and maintained by the [openEHR
-Foundation](http://openehr.org).
+openEHR is a open specification for the information model of an electronic health record, published  and maintained by [openEHR International](http://openehr.org).
 
 The full openEHR specification is complex and beyond the scope of this
 simple overview. In summary, an application developer interacts with an
@@ -146,7 +146,7 @@ ENTRY sub-classes:
 
   - ACTION
 
-  - ADMIN\_ENTRY
+  - ADMIN_ENTRY
 
 The ENTRY is the container for structured/ coded data via granular
 `clinical statements` such as Procedure, Blood pressure, Allergy within
@@ -181,10 +181,10 @@ An Element is the leaf-node construct which is basically a name/value
 pair with a defined datatype. The nature of the datatype determines the
 exact structure of the Element.
 
-# Operon Ehrscape domains and EhrExplorer
+# OEhrscape domains and EhrExplorer
 
-The [Operon Ehrscape](https://test.operon.systems) openEHR service
-provided by [Marand](http:/marand.si) is configured to allow app
+The [Ehrscape](https://test.operon.systems) openEHR service
+provided by [Better](http:/marand.si) is configured to allow app
 developers to setup and work their own individual `domain`, populated
 with its own dummy patient data and openEHR content models and allows
 both read and write access to the data and for the upload of new openEHR
@@ -208,9 +208,9 @@ There are 2 methods of accessing the ehrscape API
 
 ## Requesting an Ehrscape domain
 
-You can request an Ehrscape Domain via the Operon website. You will need
-to be a registered Operon user and access to your Ehrscape domain will
-require your Operon login and password. You will also need to provide a
+You can request an Ehrscape Domain via the C4H website. You will need
+to be a registered C4H user and access to your Ehrscape domain will
+require your C4H login and password. You will also need to provide a
 simple, unique `domain name` such as `freshehr` or `cerner`. This will
 be used to create a unique internal server name such as
 `ehrscape.operon.ehrscape` used internally by Ehrscape.
@@ -224,7 +224,7 @@ might be
 
 ### baseURL
 
-The baseURL for all Operon Ehrscape API calls is
+The baseURL for all C4H Ehrscape API calls is
 <https://test.operon.systems/rest/v1>.
 
 ## Domain provisioning
@@ -250,7 +250,7 @@ When your domain is setup you will be provided with the following
 
 ![EHR Explorer](/images/ehr_explorer.png)
 
-The Marand EhrExplorer tool can be used to create openEHR queries and to
+The Better EhrExplorer tool can be used to create openEHR queries and to
 visualise the openEHR content models being used by your domain
 
 1.  Browse to [EHRExplorer](https://test.operon.systems/explorer/)
