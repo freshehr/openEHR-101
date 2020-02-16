@@ -1,0 +1,970 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>"CKM template review" permalink: CC2-CKM-template-review.html</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#general-information" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="openEHR client-side development" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              openEHR client-side development
+            </span>
+            <span class="md-header-nav__topic">
+              
+                "CKM template review" permalink: CC2-CKM-template-review.html
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="openEHR client-side development" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    openEHR client-side development
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="What can I do with the platform?" class="md-nav__link">
+      What can I do with the platform?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../404/" title=""Page Not Found"" class="md-nav__link">
+      "Page Not Found"
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Clinical Content
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Clinical Content
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CC0-CKM-overview/" title=""CKM overview" permalink: CC0-CKM-overview.html summary: This" class="md-nav__link">
+      "CKM overview" permalink: CC0-CKM-overview.html summary: This
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../CC1-CKM-signup/" title=""CKM signup" permalink: CC1-CKM-signup.html summary: This section" class="md-nav__link">
+      "CKM signup" permalink: CC1-CKM-signup.html summary: This section
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title=""CKM template review" permalink: CC2-CKM-template-review.html" class="md-nav__link md-nav__link--active">
+      "CKM template review" permalink: CC2-CKM-template-review.html
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      EHR Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        EHR Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../EHR Explorer/EHREX1-intro/" title="Introduction to EHR Explorer" class="md-nav__link">
+      Introduction to EHR Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../EHR Explorer/EHREX2-navigation/" title="Home page and navigation" class="md-nav__link">
+      Home page and navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../EHR Explorer/EHREX3-models/" title=""Models"" class="md-nav__link">
+      "Models"
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../EHR Explorer/EHREX4-form-builder/" title=""Form Builder" permalink: EHREX4-form-builder.html summary: This" class="md-nav__link">
+      "Form Builder" permalink: EHREX4-form-builder.html summary: This
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Implementation guidance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Implementation guidance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Implementation guidance/IMP1-lab-test-imp-guide/" title="Lab test implementation guidance" class="md-nav__link">
+      Lab test implementation guidance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Introduction to openEHR and Ehrscape
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Introduction to openEHR and Ehrscape
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Introduction to openEHR and Ehrscape/ES0-overview-openehr-ehrscape/" title=""Overview of openEHR and Ehrscape" permalink:" class="md-nav__link">
+      "Overview of openEHR and Ehrscape" permalink:
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Introduction to openEHR and Ehrscape/ES1-archetypes-template/" title=""openEHR Archetypes and Templates" permalink:" class="md-nav__link">
+      "openEHR Archetypes and Templates" permalink:
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Introduction to openEHR and Ehrscape/ES2-reference-model/" title=""openEHR Reference Model" permalink: ES2-reference-model.html" class="md-nav__link">
+      "openEHR Reference Model" permalink: ES2-reference-model.html
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Platforms Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Platforms Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Platforms Basics/BASIC3-list-of-services/" title="List of available services" class="md-nav__link">
+      List of available services
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Postman
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Postman
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Postman/PM1-postman-ehrscape-getting-ready/" title="Getting ready with Postman" class="md-nav__link">
+      Getting ready with Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Postman/PM2-navigate-postman/" title="Navigate Postman" class="md-nav__link">
+      Navigate Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Postman/PM3-using-postman/" title="Using Postman with Ehrscape" class="md-nav__link">
+      Using Postman with Ehrscape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      openEHR Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        openEHR Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../openEHR Tools/openEHR0-introduction-and-setup/" title=""Introduction and setup" permalink:" class="md-nav__link">
+      "Introduction and setup" permalink:
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../openEHR Tools/openEHR1-archetype-editor/" title=""Archetype Editor" permalink: openEHR1-archetype-editor.html" class="md-nav__link">
+      "Archetype Editor" permalink: openEHR1-archetype-editor.html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../openEHR Tools/openEHR2-template-designer/" title=""Template Designer" permalink: openEHR2-template-designer.html" class="md-nav__link">
+      "Template Designer" permalink: openEHR2-template-designer.html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../openEHR Tools/openEHR3-resources/" title=""Resources" permalink: openEHR3-resources.html summary: This" class="md-nav__link">
+      "Resources" permalink: openEHR3-resources.html summary: This
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p>template in Clinical Knowledge Manager. ---</p>
+<h1 id="general-information">General Information</h1>
+<p>One of the key points to be aware of at this stage is that you will be
+reviewing a dataset rather than finished data entry form or report. The
+dataset is represented in such a way that it looks like a form, but the
+user interface for an actual form or the format of an actual report
+based on this dataset may look quite different. So, what does that mean
+for you as a reviewer?</p>
+<ul>
+<li>
+<p>The order in which individual data items are displayed may not feel
+    right. This can be due to the way in which the underlying dataset
+    artefacts are structured, and the order can be changed later in the
+    user interface.</p>
+</li>
+<li>
+<p>There will be some additional information such as descriptions of
+    data points or seemingly redundant headings which again are part of
+    the underlying artefacts and may not be required in the final user
+    interface. They are, however, helpful to understand the structure of
+    the dataset and the meaning of the individual data points.</p>
+</li>
+<li>
+<p>The way the dataset will be used in a user interface means that some
+    of the sections will only be displayed depending on certain
+    conditions, e.g. if the patient is a professional athlete, more
+    information may be required. The dataset you are reviewing includes
+    all the possible data points, but much of it is either optional or
+    conditional upon the circumstances.</p>
+</li>
+</ul>
+<p>The invitation email you received contains some information about the
+project itself, and some suggestions of what you should be looking out
+for. In general, we would like reviewers to keep the following in mind
+when doing a review:</p>
+<ul>
+<li>
+<p>Is the clinical content correct?</p>
+</li>
+<li>
+<p>Is anything missing?</p>
+</li>
+<li>
+<p>Is any of the content superfluous?</p>
+</li>
+<li>
+<p>Does the content match current practice / pathways you use?</p>
+</li>
+<li>
+<p>Are the names of the individual data points meaningful?</p>
+</li>
+</ul>
+<p>And obviously, we’ll be grateful if you point out any spelling mistakes
+or grammar issues.</p>
+<p>Don’t write things like ‘Yes’, ‘Ok’ or ‘Agree’ or ‘I like it’ in the
+comments when you do your review. Much as we like it when you agree with
+what we have done, someone has to read and action all the comments once
+the review round is completed, and these sorts of comments just waste
+time. If we don’t see any comments against a particular item, we assume
+it’s ok.</p>
+<p>The exception to this rule is if we ask a Special Question. For these
+any answer will be appreciated.</p>
+<p><img alt="Special question" src="/images/Template_review_special_question.jpg" /></p>
+<p>You can add as many or as few comments as you like. All comments are
+entirely optional, and there is only one bit we need you to complete
+before you submit your review, and that is at the very end of the
+process when we ask you for your overall recommendation. I’ll say a bit
+more about this at the end of this document.</p>
+<h1 id="invitation">Invitation</h1>
+<p>You will have received an email invitation to review a template. In the
+body of the email there will be four choices:</p>
+<p><img alt="Invitation choices" src="/images/Template_review_invitation.jpg" /></p>
+<p>If you are ready to review the template you should select <strong><em>‘Accept and
+review template now’</em></strong>. This will take you to the relevant page for
+this review in Clinical Knowledge Manager (see Section 4).</p>
+<p>If you want to be involved in the review but you don’t have time right
+now, you can select <strong><em>‘Accept and review template later’</em></strong>. You will
+receive a reminder shortly before the review period expires. You can
+also review the template at any time by simply logging onto Clinical
+Knowledge Manager and using the dashboard to find the review (see
+Section 5).</p>
+<p>If you don’t want to be involved in this review round, you can select
+<strong><em>‘Decline this invitation’</em></strong>. You may get another invitation later if
+there is another review round for the same template.</p>
+<p>If you don’t want to review this template at all, you can select
+<strong><em>‘Decline all invitations for this template’</em></strong>. You may get an
+invitation in the future to participate in a review for another template
+or archetype.</p>
+<h1 id="review-template-now">Review template now</h1>
+<h2 id="overview">Overview</h2>
+<p>When you have chosen to perform the review now from your invitation
+email, you will be presented with the Clinical Knowledge Manager login
+screen. Enter your login name and password. Your login name is usually
+in the format <strong><em>firstname.surname</em></strong> and was allocated when you first
+signed up to Clinical Knowledge Manager.</p>
+<p><img alt="Login" src="/images/Template_review_login.jpg" /></p>
+<p>Once you have signed in, the Invitation tab of the template review
+screen will be displayed:</p>
+<p><img alt="Invitation tab" src="/images/Template_review_invite_tab_annotated.jpg" /></p>
+<p>You now have several choices:</p>
+<ol>
+<li>
+<p>Display a simple view of the template to get an overview of the
+    content.</p>
+</li>
+<li>
+<p>Move to next tab to start reviewing the template.</p>
+</li>
+<li>
+<p>Use the tabs at the top to navigate through the different parts of
+    the review.</p>
+</li>
+<li>
+<p>The buttons at the bottom are available at any time during the
+    review process and can be used to <strong><em>save and continue</em></strong>, <strong><em>save
+    and close</em></strong> or <strong><em>save and submit the review</em></strong>. Note that the last
+    one should only be used when you have completed the review. It is
+    advisable to <strong><em>save and continue</em></strong> at regular intervals.</p>
+</li>
+</ol>
+<h2 id="simple-view">Simple view</h2>
+<p>Before you start the review process it may be useful to switch to the
+simple view of the template (see (1) in the screenshot above), just to
+see a more compact view of the content. This will be displayed in a
+separate tab (see (1) in the screenshot below) to allow you to toggle
+back and forth between the simple view and the review screen.</p>
+<p><img alt="Simple view" src="/images/Template_review_simple_view_annotated.jpg" /></p>
+<p>As well as looking at the simple view itself, you can also switch to a
+printable view (2) or a mindmap view (3). Either of these may be helpful
+to understand and visualise the content of the template.</p>
+<p><img alt="Print and mindmap
+views" src="/images/Template_review_print_plus_mindmap.jpg" /></p>
+<h2 id="starting-the-review">Starting the review</h2>
+<p>To start the review, just toggle back to the review screen and click on
+Next at the bottom of the screen or select the Header tab.</p>
+<p><img alt="Toggle tabs" src="/images/Template_review_toggle_simple_review.jpg" /></p>
+<h2 id="the-header-tab">The Header tab</h2>
+<p>The Header tab displays the template name and the purpose of the
+template. You can add comments on both by simply typing into the box
+entitled ‘Your Comment’.</p>
+<p>When you have finished with your comments or if you have no comments on
+the Header, click on Next or select the Data tab to move to the main
+body of the template.</p>
+<p><img alt="Header tab" src="/images/Template_review_header_tab.jpg" /></p>
+<p>Below are a couple of examples of typical comments made on the Header
+details in other template reviews:</p>
+<p><img alt="Header comments" src="/images/Template_review_header_typical_comments1.jpg" /></p>
+<p><img alt="Header comments" src="/images/Template_review_header_typical_comments2.jpg" /></p>
+<h2 id="the-data-tab">The Data tab</h2>
+<p>The Data tab displays the main body of the template. This part is quite
+long, so here are some useful hints:</p>
+<ul>
+<li>
+<p>The body of the template has four columns:</p>
+<ol>
+<li>
+<p>The name of the data point (e.g. <em>Location, Date injury
+    occurred, Pattern</em>).</p>
+</li>
+<li>
+<p>The description of the data point (e.g. <em>The date on which the
+    injury occurred</em> or <em>Narrative description about the pattern of
+    the symptom or sign during this episode</em>).</p>
+</li>
+<li>
+<p>Details of picklist values, units of measure, minimum/maximum
+    values, default values. This column is often empty where no
+    constraints have been applied.</p>
+</li>
+<li>
+<p>The Comments box where you can add your comments, suggestions or
+    questions.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Some of the lines just reflect the underlying structure and do not
+    actually contain any clinical data as such. Examples of these are:</p>
+</li>
+</ul>
+<p><img alt="Observation" src="/images/Template_review_observation.jpg" />
+<img alt="Evaluation" src="/images/Template_review_evaluation.jpg" />
+<img alt="Section" src="/images/Template_review_section.jpg" />
+<img alt="Cluster" src="/images/Template_review_cluster.jpg" /></p>
+<p>As a rule there is no need to comment on these, unless you feel that the
+name is misleading or problematic in any way.</p>
+<ul>
+<li>
+<p>These structural lines are coloured differently and have a black
+    triangle icon which you allows you to hide the details underneath
+    once you have finished commenting on it. You can unhide the details
+    by clicking the white triangle icon next to a closed section.</p>
+</li>
+<li>
+<p>Closing each part with the black triangle icon once you finish
+    reviewing that part may be helpful as you go through the review. You
+    can always reopen it with the white triangle icon .</p>
+</li>
+<li>
+<p>You don’t have to complete the review in one go. The <strong><em>Save and
+    close</em></strong> icon allows you to save what you’ve done so far and come
+    back to it later by logging back into Clinical Knowledge Manager and
+    selecting the review through the Dashboard (see Section 5).</p>
+</li>
+</ul>
+<p>Below are some examples of typical comments on other template reviews:</p>
+<p><img alt="Data tab comments" src="/images/Template_review_data_typical_comments1.jpg" /></p>
+<p><img alt="Data tab comments" src="/images/Template_review_data_typical_comments2.jpg" /></p>
+<p><img alt="Data tab comments" src="/images/Template_review_data_typical_comments3.jpg" /></p>
+<p>When you have reviewed the whole body of the template and added your
+comments, questions or suggestions, click on <strong><em>Next</em></strong> or select the
+Overall comments tab to move to the final step of the review. You can
+also interrupt your review and come back to it at any time by using the
+<strong><em>Save and close</em></strong> option at the bottom of the view.</p>
+<h2 id="the-overall-comments-tab">The Overall Comments tab</h2>
+<p>The final part of the review allows you to make some more general
+comments about the template and complete the overall recommendation.</p>
+<p>As with the previous section, comments are optional, and you don’t have
+to add anything.</p>
+<p><img alt="Overall comments" src="/images/Template_review_overall_comments_.jpg" /></p>
+<p>Below are some examples of overall comments made in other template
+reviews:</p>
+<p><img alt="Missing
+elements" src="/images/Template_review_missing_elements_comments1.jpg" /></p>
+<p><img alt="Missing
+elements" src="/images/Template_review_missing_elements_comments2.jpg" /></p>
+<p><img alt="Who else" src="/images/Template_review_who_else_comment.jpg" /></p>
+<p>The <strong><em>Overall Recommendation</em></strong> is mandatory, and this is the only part
+you must complete if you want to submit your review. You must select one
+of these options:</p>
+<ul>
+<li>
+<p>Accept</p>
+</li>
+<li>
+<p>Minor revision</p>
+</li>
+<li>
+<p>Major revision</p>
+</li>
+<li>
+<p>Reject</p>
+</li>
+<li>
+<p>Abstain</p>
+</li>
+</ul>
+<p>The screenshot below explains how these options are intended to be used.
+You can also display this information by clicking on the information
+icon next to the Overall Recommendation field.</p>
+<p><img alt="Recommendation
+information" src="/images/Template_review_recommendation_info.jpg" /></p>
+<h1 id="the-dashboard">The Dashboard</h1>
+<p>If you want to go back to your review later or you have selected to
+accept a review but complete it later, you can log into the Clinical
+Knowledge Manager (<a href="http://www.clinicalmodels.org.uk/ckm/">http://www.clinicalmodels.org.uk/ckm/</a>) and select
+the Dashboard tab. By default, the top left hand quadrant displays any
+outstanding reviews. Click on the line displaying your review and select
+Start your review now.</p>
+<p><img alt="Dashboard" src="/images/Template_review_dashboard_start_review.jpg" /></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../CC1-CKM-signup/" title=""CKM signup" permalink: CC1-CKM-signup.html summary: This section" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                "CKM signup" permalink: CC1-CKM-signup.html summary: This section
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../EHR Explorer/EHREX1-intro/" title="Introduction to EHR Explorer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction to EHR Explorer
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
