@@ -1,0 +1,1167 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Overview of openEHR and Ehrscape</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#cdr-care-data-repository" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="openEHR client-side development" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              openEHR client-side development
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Overview of openEHR and Ehrscape
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="openEHR client-side development" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    openEHR client-side development
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Introduction to openEHR and Ehrscape
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Introduction to openEHR and Ehrscape
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview of openEHR and Ehrscape
+      </label>
+    
+    <a href="./" title="Overview of openEHR and Ehrscape" class="md-nav__link md-nav__link--active">
+      Overview of openEHR and Ehrscape
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cdr-care-data-repository" class="md-nav__link">
+    CDR - Care Data Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehr-electronic-health-record" class="md-nav__link">
+    EHR - Electronic Health Record
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-optional" class="md-nav__link">
+    FOLDER (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    COMPOSITION
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-optional" class="md-nav__link">
+    SECTION (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entry" class="md-nav__link">
+    ENTRY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-optional" class="md-nav__link">
+    CLUSTER (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element" class="md-nav__link">
+    ELEMENT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrscape-domains-and-ehrexplorer" class="md-nav__link">
+    Ehrscape domains and EhrExplorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-an-ehrscape-domain" class="md-nav__link">
+    Requesting an Ehrscape domain
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseurl" class="md-nav__link">
+    baseURL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-provisioning" class="md-nav__link">
+    Domain provisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrexplorer" class="md-nav__link">
+    EhrExplorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrscape-api-browser" class="md-nav__link">
+    Ehrscape API browser
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-postman-to-test-api-calls" class="md-nav__link">
+    Using Postman to test API calls
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ES1-archetypes-template/" title="openEHR Archetypes and Templates" class="md-nav__link">
+      openEHR Archetypes and Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ES2-reference-model/" title="openEHR Reference Model" class="md-nav__link">
+      openEHR Reference Model
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Using Postman
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Using Postman
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../postman/PM1-postman-ehrscape-getting-ready/" title="Getting ready with Postman" class="md-nav__link">
+      Getting ready with Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../postman/PM2-navigate-postman/" title="Navigate Postman" class="md-nav__link">
+      Navigate Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../postman/PM3-using-postman/" title="Using Postman with Ehrscape" class="md-nav__link">
+      Using Postman with Ehrscape
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      EHR Explorer
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        EHR Explorer
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ehr-explorer/EHREX1-intro/" title="Introduction to EHR Explorer" class="md-nav__link">
+      Introduction to EHR Explorer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ehr-explorer/EHREX2-navigation/" title="Home page and navigation" class="md-nav__link">
+      Home page and navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ehr-explorer/EHREX3-models/" title="EhrExplorer Models" class="md-nav__link">
+      EhrExplorer Models
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Self service Portal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Self service Portal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../portal/SSP1-account-management/" title="Account Management" class="md-nav__link">
+      Account Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../portal/SSP2-resource-management/" title="Resource Management and Provisioning" class="md-nav__link">
+      Resource Management and Provisioning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../portal/SSP7-admin/" title="Administration" class="md-nav__link">
+      Administration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Clinical content
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Clinical content
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ckm/CC0-CKM-overview/" title="CKM overview" class="md-nav__link">
+      CKM overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ckm/CC1-CKM-signup/" title="CKM signup" class="md-nav__link">
+      CKM signup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ckm/CC2-CKM-template-review/" title="CKM template review" class="md-nav__link">
+      CKM template review
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cdr-care-data-repository" class="md-nav__link">
+    CDR - Care Data Repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehr-electronic-health-record" class="md-nav__link">
+    EHR - Electronic Health Record
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-optional" class="md-nav__link">
+    FOLDER (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composition" class="md-nav__link">
+    COMPOSITION
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-optional" class="md-nav__link">
+    SECTION (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entry" class="md-nav__link">
+    ENTRY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-optional" class="md-nav__link">
+    CLUSTER (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#element" class="md-nav__link">
+    ELEMENT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrscape-domains-and-ehrexplorer" class="md-nav__link">
+    Ehrscape domains and EhrExplorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requesting-an-ehrscape-domain" class="md-nav__link">
+    Requesting an Ehrscape domain
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseurl" class="md-nav__link">
+    baseURL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-provisioning" class="md-nav__link">
+    Domain provisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrexplorer" class="md-nav__link">
+    EhrExplorer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ehrscape-api-browser" class="md-nav__link">
+    Ehrscape API browser
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-postman-to-test-api-calls" class="md-nav__link">
+    Using Postman to test API calls
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Overview of openEHR and Ehrscape</h1>
+                
+                <p>openEHR is a open specification for the information model of an electronic health record, published  and maintained by <a href="https://openehr.org">openEHR International</a>.</p>
+<p>The full openEHR specification is complex and beyond the scope of this
+simple overview. In summary, an application developer interacts with an
+an openEHR system and a standardised information model via a simple set
+of ‘service’ APIs.</p>
+<p>openEHR does not itself create and publish EHR solutions or
+applications, rather it provides a specification for a key part of the
+technology stack on which other developers base their systems. The value
+of this approach is in reducing the effort to meet the needs of
+continually changing clinical requirements while increasing the
+likelihood of interoperability.</p>
+<p>The information model and querying/persistence are defined separately
+via the use of shareable (normally open-sourced) archetypes and
+templates, There is no direct interaction with the persistence layer,
+instead all of the interactions with an openEHR system, including
+querying happens via the information model. In essence this is not
+dissimilar to the kind of abstraction provided by Django or Ruby Active
+Objects, but is designed to work with the health domain, is much more
+extensible, and is designed to work in a completely language and
+technology-neutral manner.</p>
+<p>openEHR systems can be built on any programming language, OS platform
+and with any persistence solution - examples of SQL Server, Oracle,
+PostgreSQL, mongoDB and MumpsDB solutions exist. It is the
+responsibility of the back-end developer to map their chosen persistence
+solution to the openEHR information model and querying system.</p>
+<p>Ehrscape is an API wrapper for an implementation of the
+<a href="https://openehr.org">openEHR</a> specification.</p>
+<p>The overall structure of an openEHR clinical system is …</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">Physical CDR</span>
+<span class="err"> Virtual CDR (Ehrscape Domain)</span>
+<span class="err">  EHR</span>
+<span class="err">   (FOLDER)</span>
+<span class="err">    COMPOSITION</span>
+<span class="err">     (SECTION)</span>
+<span class="err">      ENTRY</span>
+<span class="err">       (CLUSTER)</span>
+<span class="err">        ELEMENT</span>
+<span class="err">         name</span>
+<span class="err">          value</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="cdr-care-data-repository">CDR - Care Data Repository</h2>
+<p>All of the records within a single namespaced patient data repository.
+In the Ehrscape environment, a single physical repository is represented
+as a number of independent virtual ‘domains’ each of which can be
+regarded as a separate CDR.</p>
+<h2 id="ehr-electronic-health-record">EHR - Electronic Health Record</h2>
+<p>The top-level container of all clinical records for a single patient.</p>
+<h2 id="folder-optional">FOLDER (optional)</h2>
+<p>A high-level grouping of Compositions. Not implemented in Ehrscape, and
+not in common use generally</p>
+<h2 id="composition">COMPOSITION</h2>
+<p>A document-level container for all clinical records. This equates to an
+Encounter, a Lab Report, a Discharge summary, a set of Nursing
+Observations. All openEHR data is stored within the context of a
+composition and always includes clinical/medico-legal context such as
+patient, clinical author details, encounter times etc.</p>
+<p>The Composition is the container for structured/ coded data with
+granular clinical statements such as procedure, blood pressure, allergy
+expressed as an ENTRY, within which the leaf data is contained in
+ELEMENTS e.g Systolic, Diastolic, Cuff size.</p>
+<p>Compositions are versioned and fully-audit trailed, so that previous
+versions can always be retrieved.</p>
+<p>Two forms of persistence/versioning strategy can be employed</p>
+<ol>
+<li>
+<p><strong>‘Event document’ strategy</strong></p>
+<p>Most compositions will be saved as ‘events’. Each instance of the
+event creates an entirely new composition with a new unique
+identifier. This equates to a POST in Restful terms. Examples would
+be a GP encounter, Nursing observation or Discharge report. Updated
+versions of these kinds of documents would only be created if an
+error or inaccuracy needed to be corrected.</p>
+</li>
+<li>
+<p><strong>‘Curated document’ strategy</strong></p>
+<p>A less common, but important versioning strategy involves ‘curated
+documents’ where it is important to hold a single instance of a
+named document, but which requires to be continually updated as a
+‘source-of-truth’. Examples might be a Problem summary, a list of
+known allergies, or an End-of-Life Care Plan. The common factor with
+these type of documents is that there should only ever be a single
+instance which reflects the current known facts or understanding. Of
+course previous versions must remain accessible for medico-legal
+purposes.</p>
+</li>
+</ol>
+<h3 id="versioning">Versioning</h3>
+<p>openEHR systems handle versioning automatically. Any time a new version
+of an existing document is committed to the system, its unique
+compositionId identifier ‘version suffix’ is updated e.g</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c">798e27b1-f2e8-48c3-8ced-42d4d27d1db3::c4h.hopd.com::1</span>
+</pre></div>
+</td></tr></table>
+
+<p>→</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c">798e27b1-f2e8-48c3-8ced-42d4d27d1db3::c4h.hopd.com::2</span>
+</pre></div>
+</td></tr></table>
+
+<p>In normal operation only the most recent version of the composition is
+returned by querying or composition retrieval.</p>
+<h2 id="section-optional">SECTION (optional)</h2>
+<p>Sections are optional structures which are used to break up complex
+openEHR Compositions, grouping the Entries into high-level headings e.g.
+in a Transfer of Care document, Sections might be represented as
+Allergies, Problems, Procedures, Lab tests etc. Sections are convenient
+for human consumption and navigation but should not be used to infer
+meaning.</p>
+<h2 id="entry">ENTRY</h2>
+<p>In openEHR, all of key clinical content is carried within one of the 5
+ENTRY sub-classes:</p>
+<ul>
+<li>
+<p>OBSERVATION</p>
+</li>
+<li>
+<p>EVALUATION</p>
+</li>
+<li>
+<p>INSTRUCTION</p>
+</li>
+<li>
+<p>ACTION</p>
+</li>
+<li>
+<p>ADMIN_ENTRY</p>
+</li>
+</ul>
+<p>The ENTRY is the container for structured/ coded data via granular
+<code class="codehilite"><span class="err">clinical statements</span></code> such as Procedure, Blood pressure, Allergy within
+which the leaf data is contained in ELEMENTS e.g Systolic, Diastolic,
+Cuff size.</p>
+<h2 id="cluster-optional">CLUSTER (optional)</h2>
+<p>A Cluster is a branch-like sub-structure of an ENTRY which allow
+ELEMENTS to be conveniently grouped and possibly repeated e.g in a Lab
+Test archetype, data related to a single lab analysis result is grouped
+within a Cluster to allow the whole pattern to be repeated</p>
+<ul>
+<li>
+<p>Lab Test</p>
+</li>
+<li>
+<p>Lab Result (Cluster)</p>
+</li>
+<li>
+<p>Result</p>
+</li>
+<li>
+<p>Comment</p>
+</li>
+<li>
+<p>Datetime reported</p>
+</li>
+<li>
+<p>Status</p>
+</li>
+</ul>
+<p>In the construct above the cluster allows multiple Lab results to be
+captured within a single Lab Test.</p>
+<h2 id="element">ELEMENT</h2>
+<p>An Element is the leaf-node construct which is basically a name/value
+pair with a defined datatype. The nature of the datatype determines the
+exact structure of the Element.</p>
+<h2 id="ehrscape-domains-and-ehrexplorer">Ehrscape domains and EhrExplorer</h2>
+<p>The <a href="https://test.operon.systems">Ehrscape</a> openEHR service
+provided by <a href="http:/marand.si">Better</a> is configured to allow app
+developers to setup and work their own individual <code class="codehilite"><span class="err">domain</span></code>, populated
+with its own dummy patient data and openEHR content models and allows
+both read and write access to the data and for the upload of new openEHR
+content models.</p>
+<p>Each Ehrscape domain has its own login and password and in the near
+future may also be accessed via an Ouath2 session from trusted provider.</p>
+<p>There are 2 methods of accessing the ehrscape API</p>
+<ol>
+<li>
+<p>Set up a sessionID variable via the GET /session call. This returns
+    a token that can be supplied in the headers of any subsequent API
+    calls. This is the preferred option since it avoids having to log in
+    to Ehrscape for every separate API call.</p>
+</li>
+<li>
+<p>Create a Basic Authentication string and pass this to each API call.
+    This is simpler to work with, particularly where it is not easy to
+    maintain a session variable e.g. in an API testing tool like Postman
+    but incurs an overhead of having to resolve the username and
+    password for each call.</p>
+</li>
+</ol>
+<h2 id="requesting-an-ehrscape-domain">Requesting an Ehrscape domain</h2>
+<p>You can request an Ehrscape Domain via the C4H website. You will need
+to be a registered C4H user and access to your Ehrscape domain will
+require your C4H login and password. You will also need to provide a
+simple, unique <code class="codehilite"><span class="err">domain name</span></code> such as <code class="codehilite"><span class="err">freshehr</span></code> or <code class="codehilite"><span class="err">cerner</span></code>. This will
+be used to create a unique internal server name such as
+<code class="codehilite"><span class="err">ehrscape.operon.ehrscape</span></code> used internally by Ehrscape.</p>
+<p>An example of an ehrscape Domain that is being used for C4H Training
+might be</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">login</span><span class="o">:</span> <span class="n">operon_training</span>
+<span class="n">password</span><span class="o">:</span> <span class="mi">223</span><span class="n">ergt$</span>
+<span class="n">domain_name</span><span class="o">:</span> <span class="n">ehrscape</span><span class="o">.</span><span class="na">c4h</span><span class="o">.</span><span class="na">training</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="baseurl">baseURL</h3>
+<p>The baseURL for all C4H Ehrscape API calls is
+<a href="https://test.operon.systems/rest/v1">https://test.operon.systems/rest/v1</a>.</p>
+<h2 id="domain-provisioning">Domain provisioning</h2>
+<p>When your domain is setup you will be provided with the following</p>
+<ol>
+<li>
+<p>Access to a personal domain on Operon Ehrscape with login, password
+    and domain name.</p>
+</li>
+<li>
+<p>Access to the Ehrscape EhrExplorer tool.</p>
+</li>
+<li>
+<p>Acess to the Ehrscape ApiExlorer tool.</p>
+</li>
+<li>
+<p>The domain will be populated with</p>
+<ul>
+<li>
+<p>Several dummy patents</p>
+</li>
+<li>
+<p>openEHR content models and dummy data for</p>
+</li>
+<li>
+<p>Nursing Vital signs encounter.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="ehrexplorer">EhrExplorer</h2>
+<p><img alt="EHR Explorer" src="/images/ehr_explorer.png" /></p>
+<p>The Better EhrExplorer tool can be used to create openEHR queries and to
+visualise the openEHR content models being used by your domain</p>
+<ol>
+<li>
+<p>Browse to <a href="https://test.operon.systems/explorer/">EHRExplorer</a></p>
+</li>
+<li>
+<p>Enter the name and password for your C4H Ehrscape domain as above</p>
+</li>
+<li>
+<p>Leave the domain field as <code class="codehilite"><span class="err">ehrscape</span></code></p>
+</li>
+</ol>
+<p>In the navigation bar on the left you can double-click on the <code class="codehilite"><span class="err">Vital</span><span class="err">signs encounter</span></code> template, which will open the template in the
+bottom-right panel. Right-click on nodes for further details of the
+constraints applied.</p>
+<p>e.g. If you navigate to <strong>'$$$'</strong> and right-click you can examine the
+internal <em>'atcode'</em> constraints allowed for this element.</p>
+<h2 id="ehrscape-api-browser">Ehrscape API browser</h2>
+<ol>
+<li>
+<p>Browse to <a href="https://test.operon.systems/api-explorer.html">EHRScape API
+    Explorer</a></p>
+</li>
+<li>
+<p>Press the <img alt="Tool button" src="/images/tool_button.png" /> tool setting
+    button and set userName to <code class="codehilite"><span class="err">c4h_train</span></code> and password to <code class="codehilite"><span class="err">c4h_train99</span></code></p>
+</li>
+<li>
+<p>Any test calls in the API browser will now work against the Operon
+    Training domain.</p>
+</li>
+</ol>
+<h2 id="using-postman-to-test-api-calls">Using Postman to test API calls</h2>
+<p>The <a href="http://getpostman.com">Postman add-on</a> is vey useful for testing
+API calls outside of an application context. <a href="/technical/postman">Postman collection and
+environment files</a> are available for the C4H. The
+collection file contains all of the relevant Ehrscape API calls and a
+Postman Environment file matching your domain details will be created
+and which you may import.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ES1-archetypes-template/" title="openEHR Archetypes and Templates" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                openEHR Archetypes and Templates
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
