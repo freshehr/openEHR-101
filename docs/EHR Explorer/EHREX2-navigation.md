@@ -14,7 +14,7 @@ for each which describes all the available functionality in more detail.
 To navigate to any of the available functions, just use the menu bar at
 the top.
 
-## 1\. Settings and log out
+## 1. Settings and log out
 
 ![EHR Explorer Settings](/images/ehr_explorer_settings.jpg)
 
@@ -25,24 +25,24 @@ a domain selector available on the login screen, define client and
 server languages, enable "|" notation and choose the template list label
 from either Template Id, Default name or Localised name.
 
-## 2\. Models
+## 2. Models
 
 ![EHR Explorer Models](/images/ehr_explorer_models.jpg)
 
 The Models option switches to the Models view where you can import,
 search and view archetypes and templates. To find out more about this
-function, [click here]({{site.baseurl}}/EHREX3-models.html)
+function, [click here](./EHREX3-models.md)
 
-## 3\. Form Builder
+## 3. Form Builder
 
 ![EHR Explorer Models](/images/ehr_explorer_models.jpg)
 
 The Form Builder option allows you to create, run, save and test basic
 forms for entering data directly in the Clinical Data Repository. To
 find out more about this function, [click
-here]({{site.baseurl}}/EHREX4-form-builder.html)
+here](./EHREX4-form-builder.md)
 
-## 4\. Documents
+## 4. Documents
 
 ![EHR Explorer Documents](/images/ehr_explorer_documents_blank.jpg)
 
@@ -54,7 +54,7 @@ velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
 
-## 5\. Query
+## 5. Query
 
 ![EHR Explorer Query](/images/ehr_explorer_query_blank.jpg)
 
