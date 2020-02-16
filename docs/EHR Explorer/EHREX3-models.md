@@ -1,4 +1,4 @@
-title: "Models" 
+title:EhrExplorer Models
 permalink: EHREX3-models.html
 summary: This section provides instructions how to use the Models function in EHR Explorer.
 ---

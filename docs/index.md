@@ -42,7 +42,7 @@ the documentation and explore the APIs using Postman which provides a
 test harness allowing you to experiment with the APIs available in your
 Operinos.
 
-# Connect you First Application
+# Connect your First Application
 
 Once you understand the basics you will be ready to connect your first
 application to the platform. You can build applications to run on the

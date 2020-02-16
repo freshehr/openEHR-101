@@ -1,5 +1,6 @@
-title: "Form Builder" permalink: EHREX4-form-builder.html summary: This
-section provides …​ ---
+title: Form Builder 
+permalink: EHREX4-form-builder.html 
+---
 
 # Overview
 
